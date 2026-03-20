@@ -1,0 +1,28 @@
+
+            ┌────────────────────┐
+            │      Users         │
+            └─────────┬──────────┘
+                      │
+                      ▼
+              apiaroundreact.net
+                      │
+                      ▼
+              ┌─────────────┐
+              │   Nginx     │
+              │  EC2 T2     │
+              │  Ubuntu     │
+              └──────┬──────┘
+                     │
+                     ▼
+              localhost:3000
+                     │
+                     ▼
+               Node.js API
+                     │
+                     ▼
+               MongoDB Atlas
+
+
+Frontend
+
+Users → CloudFront / S3 → React App
